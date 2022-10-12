@@ -1,0 +1,245 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgb(0, 74, 173);
+}
+
+@font-face {
+  font-family: 'Superfly';
+  src: local('Superfly'), url(../fonts/Superfly.ttf) format('truetype');
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 5px;
+  border: solid 2px black;
+  padding: 3px;
+  width: 45vw;
+  height: 68vh;
+  margin-left: 3%;
+  margin-top: 3%;
+  background-color: white;
+}
+
+.grid-container > div {
+  text-align: center;
+  border: solid 2px black;
+  display: flex;
+}
+
+.grid-1 {
+  background-color: black;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-content: space-between;
+  padding: 0 1vw;
+  align-items: center;
+}
+
+.has-trunfo-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.has-trunfo {
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  font-size: medium;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: black;
+}
+
+.remaining-points {
+  padding-right: 4vw;
+}
+.balloon-points {
+  width: 12vw;
+  position: absolute;
+  z-index: 1;
+  top: 1.5vh;
+  left: 42vw;
+}
+.points {
+  position: absolute;
+  color: black;
+  top: 7.5vh;
+  left: 46.2vw;
+  z-index: 2;
+  text-shadow: black 1px 1px 2px;
+}
+
+.grid-2 {
+  grid-column-start: 1;
+  grid-column-end:3;
+  align-items: center;
+}
+
+.card-name-label {
+  padding-left: 1vw;
+}
+
+#card-name-input {
+  border: solid black;
+  border-width: 0 0 1px 0;
+  font-weight: bold;
+}
+
+#card-name-input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.grid-3 {
+  grid-column-start: 3;
+  grid-column-end:4;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-4 {
+  grid-column-start: 1;
+  grid-column-end:4;
+  justify-content: space-around;
+}
+
+.atributes-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+.input-attribute {
+  width: 9vw;
+  border: solid black;
+  border-width: 0 0 1px 0;
+  font-weight: bold;
+}
+
+.input-attribute:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.grid-6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  /* autoprefixer: off */
+  grid-row-end: 6;
+  padding-left: 1vw;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-title {
+  text-align: left;
+}
+
+#card-description-input {
+  resize: none;
+  max-width: 94%;
+  height: 100%;
+  margin-bottom: .5vh;
+}
+.grid-5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  /* autoprefixer: off */
+  grid-row-end: 6;
+}
+
+#add-card {
+  width: 200px;
+  height: 30px;
+  border: solid 1px white;
+  background-color: black;
+  color: white;
+  border-radius: none;
+  position: absolute;
+  bottom: 21vh;
+  left: 19vw;
+}
+
+/* #form-new-card {
+  border: solid 1px black;
+  height: 68vh;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 45vw;
+}
+
+#form-header-container {
+  background-color: black;
+  color: whitesmoke;
+  height: 13vh;
+}
+
+.black-borders {
+  border: solid black;
+  border-width: 2px 0 2px 0;
+  margin: 5px 0 5px 0;
+}
+
+.space-around {
+  padding: 13px 0 13px 20px;
+  text-align: initial;
+}
+
+.input-attribute-format {
+  width: 5vw;
+}
+
+#form-atributtes-container {
+  display: flex;
+  padding-right: 20px;
+  width: max-content;
+}
+
+#align-attributes-label {
+  display: flex;
+  justify-content: space-around;
+}
+
+#form-description-container {
+  padding: 0;
+  border-bottom: solid 2px black;
+}
+
+#input-description-label {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-description-input {
+  width: 24vw;
+  height: 20vh;
+}
+
+#card-description-inner-container {
+  border: solid black;
+  border-width: 0 2px 0 0;
+  width: 27vw;
+  height: 33vh;
+}
+
+#card-rarity-input {
+  margin: 3px 0 0 20.5vw;
+  height: 10vh;
+} */
