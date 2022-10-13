@@ -1,5 +1,5 @@
 import React from 'react';
-import FormCard from './component/FormCard';
+import FormCard from './component/FormCard.jsx';
 import './App.css';
 
 function App() {
