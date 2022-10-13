@@ -152,8 +152,8 @@ body {
   flex-direction: column;
   grid-column-end: 3;
   grid-column-start: 1;
-  /* autoprefixer: off */
   padding-left: 1vw;
+  justify-content: space-around;
 }
 
 .description-title {
@@ -161,9 +161,10 @@ body {
 }
 
 #card-description-input {
-  height: 100%;
-  margin-bottom: .5vh;
-  max-width: 94%;
+  border: solid black;
+  border-width: 0 0 1px 0;
+  font-weight: bold;
+  width: 95%;
   resize: none;
 }
 
@@ -175,6 +176,7 @@ body {
   grid-column-start: 1;
   /* autoprefixer: off */
   padding-left: 1vw;
+  justify-content: space-around;
 }
 
 .image-url {
@@ -182,9 +184,11 @@ body {
 }
 
 #card-image-input {
-  height: 100%;
-  margin-bottom: .5vh;
-  max-width: 94%;
+  border: solid black;
+  border-width: 0 0 1px 0;
+  font-weight: bold;
+  width: 95%;
+  resize: none;
 }
 
 #add-card {
