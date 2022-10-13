@@ -24,6 +24,7 @@ body {
   margin-left: 3%;
   margin-top: 3%;
   padding: 3px;
+  position: relative;
   width: 45vw;
 }
 
@@ -67,18 +68,18 @@ body {
   padding-right: 4vw;
 }
 .balloon-points {
-  left: 42vw;
+  left: 39vw;
   position: absolute;
-  top: 1.5vh;
+  bottom: 56vh;
   width: 12vw;
   z-index: 1;
 }
 .points {
   color: black;
-  left: 46.2vw;
+  left: 43.2vw;
   position: absolute;
   text-shadow: black 1px 1px 2px;
-  top: 7.5vh;
+  bottom: 64vh;
   z-index: 2;
 }
 
@@ -135,14 +136,22 @@ body {
   outline: 0;
 }
 
+.grid-5 {
+  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-row-start: 4;
+  /* autoprefixer: off */
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
 .grid-6 {
   align-items: left;
   display: flex;
   flex-direction: column;
   grid-column-end: 3;
   grid-column-start: 1;
-  grid-row-end: 6;
-  grid-row-start: 4;
   /* autoprefixer: off */
   padding-left: 1vw;
 }
@@ -157,12 +166,25 @@ body {
   max-width: 94%;
   resize: none;
 }
-.grid-5 {
-  grid-column-end: 4;
-  grid-column-start: 3;
-  grid-row-end: 6;
-  grid-row-start: 4;
+
+.grid-7 {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  grid-column-end: 3;
+  grid-column-start: 1;
   /* autoprefixer: off */
+  padding-left: 1vw;
+}
+
+.image-url {
+  text-align: left;
+}
+
+#card-image-input {
+  height: 100%;
+  margin-bottom: .5vh;
+  max-width: 94%;
 }
 
 #add-card {
@@ -170,11 +192,11 @@ body {
   border: solid 1px white;
   border-radius: none;
   color: white;
-  bottom: 21vh;
+  bottom: -4.3vh;
   font-weight: bold;
   font-size: medium;
   height: 30px;
-  left: 19vw;
+  left: 13vw;
   position: absolute;
   width: 200px;
 }
