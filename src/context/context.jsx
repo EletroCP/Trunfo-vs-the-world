@@ -5,7 +5,7 @@ export const Context = createContext();
 
 function ContextProvider({ children }) {
   const [hasTrunfo, setHasTrunfo] = useState(false);
-  const [points, setPoints] = useState(240);
+  const [points, setPoints] = useState(210);
   const [name, setName] = useState('');
   const [rarity, setRarity] = useState('Comum');
   const [music, setMusic] = useState(0);
